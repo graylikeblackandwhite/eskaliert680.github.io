@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Estrogel</title>
+</head>
+
+<body>
+
+    <div class="jumbotron d-flex align-items-center min-vh-100">
+        <div class="container my-5" id="notes-content">
+            <h2 class="text-center">Estrogel calculations, basic recipe</h2>
+            <p>The bare minimum for successful production of estrogel is a millimeter scale, an airless pump bottle for
+                easy dispensing, and
+                weighing paper to easily dump the powder into the bottle.</p>
+            <p>\(G:=\) The capacity, in grams, of hand sanitizer your container can hold.</p>
+            <p>\(C:=\) The desired concentration of estradiol per pump (0.5% or 0.005 is recommended)</p>
+            <p>\(Y:=\) The amount, in grams, of powdered estradiol you'll need.</p>
+
+            <p>Then, $$C=\frac{Y}{Y+G}$$ and after some algebra,
+                $$\frac{CG}{1-C}=Y$$
+                You will also need 3% grams of \(G\) in orange oil/d-limonene, which is a penetration enhancer.</p>
+            <h4 class="text-center">Assembly</h4>
+            <ol>
+                <li>Fill your airless pump bottle with \(G\) grams of hand sanitizer.</li>
+                <li>Mix together \(0.03 \cdot G\) grams of orange oil/d-limonene with your hand sanitizer</li>
+                <li>Finally, mix together your powdered estradiol with your hand sanitizer.</li>
+                <li>Mix/shake your bottle and then let it rest. It is typical for there to be bubbles, white streaks
+                    where the estradiol has not fully dissolved, etc. It will go away in a few hours.</li>
+            </ol>
+            <h3 class="text-center">Example</h3>
+
+            <p>Suppose \(G=45\), \(C=0.005\). Then $$Y=\frac{45*0.005}{1-0.005}$$which comes out to $$Y \approx 0.226g$$
+                of powdered estradiol
+                and you'd need \(0.03 \cdot 45 \approx 1.35g\) of orange oil/d-limonene.</p>
+
+            <h3 class="text-center">Further reading</h3>
+            <ul>
+                <li><a href="https://transfemscience.org/">Transfemscience</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
