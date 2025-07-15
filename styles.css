@@ -1,0 +1,70 @@
+body {
+  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* --- Centering wrapper --------------------------------------- */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;        /* full viewport height */
+  padding: 1rem;        /* optional breathing room */
+  box-sizing: border-box;
+}
+
+/* --- The centered box ---------------------------------------- */
+.box {
+  /* whatever styling you like */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  max-width: 100%;      /* don’t let the box overflow the wrapper */
+  max-height: 100%;
+  display: flex;        /* keeps the image nicely inside */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Responsive image ---------------------------------------- */
+.box img {
+  display: block;
+  max-width: 100%;
+  max-height: 60vh;     /* never taller than 70 % of viewport */
+  width: auto;
+  height: auto;
+  border-radius: inherit; /* keeps rounded corners if any */
+}
+
+/* --- Beautify links inside the centered card ------------------ */
+.box a {
+  color: #0069d9;                /* calm blue */
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .25s ease;
+  border-bottom: 1px solid transparent;  /* subtle underline that appears on hover */
+}
+
+.box a:hover,
+.box a:focus {
+  color: #004085;
+  border-bottom-color: currentColor;
+}
+
+/* optional decorative arrow on hover */
+.box a::after {
+  content: " →";
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all .25s ease;
+}
+
+.box a:hover::after,
+.box a:focus::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-sm {
+    font-size: small;
+}
