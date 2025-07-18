@@ -18,6 +18,7 @@ body {
   /* whatever styling you like */
   background: #fff;
   border-radius: 8px;
+  padding: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,.15);
   max-width: 100%;      /* don’t let the box overflow the wrapper */
   max-height: 100%;
@@ -38,7 +39,7 @@ body {
 
 /* --- Beautify links inside the centered card ------------------ */
 .box a {
-  color: #0069d9;                /* calm blue */
+  color: #d90094;                /* calm blue */
   font-weight: 500;
   text-decoration: none;
   transition: all .25s ease;
@@ -47,13 +48,12 @@ body {
 
 .box a:hover,
 .box a:focus {
-  color: #004085;
+  color: #850066;
   border-bottom-color: currentColor;
 }
 
 /* optional decorative arrow on hover */
 .box a::after {
-  content: " →";
   opacity: 0;
   transform: translateX(-4px);
   transition: all .25s ease;
